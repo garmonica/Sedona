@@ -1,7 +1,7 @@
 # Учебный проект «Седона»
 
 * Вёрстка: [Оля Петрова](https://up.htmlacademy.ru/adaptive/21/user/378519).
-* Разработано: [HTML Academy](https://up.htmlacademy.ru).
+* Разработано: [HTML Academy](https://htmlacademy.ru/study).
 
 ---
 
