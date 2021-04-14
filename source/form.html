@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
-  <title>Седона - напишите отзыв</title>
+  <title>Седона - оставьте отзыв</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
-<body>
+<body class="page__body">
+  <header class="header">
+    <a class="header__logo">
+      <!-- logo -->
+      <img src="https://www.placecage.com/102/84">
+    </a>
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+      <button class="navigation__close">Закрыть</button>
+    </nav>
+    <div class="header__intro header__intro--short">
+      <img class="header__slogan header__slogan--short">
+    </div>
+  </header>
 
-  <p>Учебный проект - форма</p>
+  <main class="main">
+    <h1 class="visually-hidden">Форма отзыва</h1>
+    <section class="review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+      <form class="review__form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">Представьтесь:</legend>
+          <label class="review__label" for="first-name">Имя*:</label>
+          <input class="review__input" id="first-name" type="text" name="user-first-name" placeholder="Петр" required>
+          <label class="review__label" for="last-name">Фамилия*:</label>
+          <input class="review__input" id="last-name" type="text" name="user-last-name" placeholder="Иванов" required>
+          <label class="review__label" for="paternal-name">Отчество:</label>
+          <input class="review__input" id="paternal-name" type="text" name="user-paternal-name"
+            placeholder="Александрович">
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">Контактная информация:</legend>
+          <label class="review__label" for="phone-number">Контактный телефон*:</label>
+          <input class="review__input" id="phone-number" type="tel" name="user-phone-number"
+            placeholder="Введите телефон" required>
+          <label class="review__label" for="email-address">Электронная почта*:</label>
+          <input class="review__input" id="email-address" type="email" name="user-email" placeholder="Введите e-mail"
+            required>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">Ваше общее впечатление:</legend>
+          <input class="review__radio" id="good-impression" type="radio" name="impression" checked>
+          <label class="review__label-choice" for="good-impression">Скорее положительное</label>
+          <input class="review__radio" id="bad-impression" type="radio" name="impression">
+          <label class="review__label-choice" for="bad-impression">Скорее отрицательное</label>
+          <input class="review__radio" id="unclear-impression" type="radio" name="impression">
+          <label class="review__label-choice" for="unclear-impression">Затрудняюсь ответить</label>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">Посещенные достопримечательности:</legend>
+          <input class="review__checkbox" id="devils-bridge" type="checkbox" name="devils-bridge" checked>
+          <label class="review__label-choice" for="devils-bridge">Мост Дьявола</label>
+          <input class="review__checkbox" id="bell-mountain" type="checkbox" name="bell-mountain" checked>
+          <label class="review__label-choice" for="bell-mountain">Гора-Колокол</label>
+          <input class="review__checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
+          <label class="review__label-choice" for="slide-park">Слайд-парк</label>
+          <input class="review__checkbox" id="red-mountains" type="checkbox" name="red-mountains">
+          <label class="review__label-choice" for="red-mountains">Красные скалы</label>
+        </fieldset>
+        <fieldset class="review__fieldset">
+          <legend class="review__legend">Опишите свои эмоции:</legend>
+          <textarea class="review__details" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="review__send">Отправить отзыв</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="footer__tag" href="#">#visitsedona</a>
+    <ul class="footer__social">
+      <li class="footer__item">
+        <a>Твиттер</a>
+      </li>
+      <li class="footer__item">
+        <a>Фейсбук</a>
+      </li>
+      <li class="footer__item">
+        <a>Ютуб</a>
+      </li>
+    </ul>
+    <p class="footer__copyright">Разработано
+      <a href="#">лого академии</a>
+    </p>
+  </footer>
 
 </body>
 
