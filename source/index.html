@@ -3,42 +3,45 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - главная страница</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="header__logo">
+  <header class="page-header">
+    <a class="page-header__logo">
       <!-- logo -->
       <img src="https://www.placecage.com/102/84">
     </a>
-    <nav class="header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+    <nav class="page-header__main-nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">HTML Academy</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
-      <button class="navigation__close">Закрыть</button>
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </nav>
-    <div class="header__intro">
-      <img class="header__slogan">
+    <div class="page-header__intro">
+      <img class="page-header__slogan" src="https://www.placecage.com/282/214">
     </div>
   </header>
 
-  <main class="main">
+  <main class="page-main">
     <h1 class="visually-hidden">Информация о городе Седона, штат Аризона</h1>
-    <p class="main__heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+    <p class="page-main__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -91,9 +94,9 @@
       <p class="hotel-search__question">Заинтересовались?</p>
       <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <a class="hotel-search__link" href="#">Найти гостиницу</a>
+      <a class="hotel-search__link button" href="#">Найти гостиницу</a>
     </section>
-    <div class="main__map">
+    <div class="page-main__map">
       <!-- Карта, но возможно в другой секции -->
     </div>
   </main>

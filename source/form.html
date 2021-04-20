@@ -3,40 +3,43 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона - оставьте отзыв</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="header__logo">
+  <header class="page-header">
+    <a class="page-header__logo">
       <!-- logo -->
       <img src="https://www.placecage.com/102/84">
     </a>
-    <nav class="header__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+    <nav class="page-header__main-nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">HTML Academy</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
-      <button class="navigation__close">Закрыть</button>
+      <button class="main-nav__toggle">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </nav>
-    <div class="header__intro header__intro--short">
-      <img class="header__slogan header__slogan--short">
+    <div class="page-header__intro page-header__intro--short">
+      <img class="page-header__slogan page-header__slogan--short">
     </div>
   </header>
 
-  <main class="main">
+  <main class="page-main">
     <h1 class="visually-hidden">Форма отзыва</h1>
     <section class="review">
       <h2 class="review__title">Оставьте свой отзыв</h2>
@@ -86,7 +89,7 @@
           <legend class="review__legend">Опишите свои эмоции:</legend>
           <textarea class="review__details" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="review__send">Отправить отзыв</button>
+        <button class="review__send button">Отправить отзыв</button>
       </form>
     </section>
 

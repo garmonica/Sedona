@@ -1,3 +1,52 @@
 .review {
   outline: 1px solid crimson;
 }
+
+.review__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.review__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: @dark-grey;
+}
+
+.review__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.review__label {
+  font-size: 14px;
+  line-height: 26px;
+  color: @dark-grey;
+}
+
+.review__input::placeholder,
+.review__details::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: none;
+}
+
+.review__label-choice {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}
