@@ -1,5 +1,13 @@
 .footer {
-  outline: 1px solid crimson;
+  padding: 37px 20px 23px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 60px 23px;
+  }
 }
 
 .footer__tag {

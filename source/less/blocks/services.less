@@ -1,18 +1,49 @@
 .services {
-  outline: 1px solid crimson;
+  .offset();
+  list-style: none;
+  padding: 37px 20px 8px;
+  text-align: left;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 157px 20px 34px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 55px;
+  }
+}
+
+.services__item {
+  padding-left: 50px;
+  margin-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.services__item--souvenirs {
+  order: 3;
 }
 
 .services__title {
+  .offset();
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
     font-size: 21px;
   }
 }
 
 .services__description {
+  .offset();
   font-size: 14px;
   line-height: 21px;
   color: @dark-grey;

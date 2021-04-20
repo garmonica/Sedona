@@ -1,10 +1,18 @@
 .page-header {
   outline: 1px solid crimson;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .page-header__logo {
-  position: absolute;
-  top: 0;
-  z-index: 1;
+  display: block;
+  align-self: center;
+  line-height: 0;
+  z-index: @zindex-logo;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+  }
 }
