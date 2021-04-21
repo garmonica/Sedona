@@ -15,7 +15,7 @@
       <!-- logo -->
       <img src="https://www.placecage.com/102/84">
     </a>
-    <nav class="page-header__main-nav main-nav">
+    <nav class="page-header__main-nav main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__link" href="index.html">Главная</a>
@@ -35,7 +35,7 @@
       </button>
     </nav>
     <div class="page-header__intro intro intro--short">
-      <img class="intro__slogan intro__slogan--short">
+      <img class="intro__slogan intro__slogan--short" src="https://www.placecage.com/229/39">
     </div>
   </header>
 
@@ -46,49 +46,65 @@
       <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопримечательностях</p>
       <form class="review__form" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="review__fieldset">
-          <legend class="review__legend">Представьтесь:</legend>
-          <label class="review__label" for="first-name">Имя*:</label>
-          <input class="review__input" id="first-name" type="text" name="user-first-name" placeholder="Петр" required>
-          <label class="review__label" for="last-name">Фамилия*:</label>
-          <input class="review__input" id="last-name" type="text" name="user-last-name" placeholder="Иванов" required>
-          <label class="review__label" for="paternal-name">Отчество:</label>
-          <input class="review__input" id="paternal-name" type="text" name="user-paternal-name"
-            placeholder="Александрович">
-        </fieldset>
-        <fieldset class="review__fieldset">
-          <legend class="review__legend">Контактная информация:</legend>
-          <label class="review__label" for="phone-number">Контактный телефон*:</label>
-          <input class="review__input" id="phone-number" type="tel" name="user-phone-number"
-            placeholder="Введите телефон" required>
-          <label class="review__label" for="email-address">Электронная почта*:</label>
-          <input class="review__input" id="email-address" type="email" name="user-email" placeholder="Введите e-mail"
-            required>
-        </fieldset>
-        <fieldset class="review__fieldset">
-          <legend class="review__legend">Ваше общее впечатление:</legend>
-          <input class="review__radio" id="good-impression" type="radio" name="impression" checked>
-          <label class="review__label-choice" for="good-impression">Скорее положительное</label>
-          <input class="review__radio" id="bad-impression" type="radio" name="impression">
-          <label class="review__label-choice" for="bad-impression">Скорее отрицательное</label>
-          <input class="review__radio" id="unclear-impression" type="radio" name="impression">
-          <label class="review__label-choice" for="unclear-impression">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="review__fieldset">
-          <legend class="review__legend">Посещенные достопримечательности:</legend>
-          <input class="review__checkbox" id="devils-bridge" type="checkbox" name="devils-bridge" checked>
-          <label class="review__label-choice" for="devils-bridge">Мост Дьявола</label>
-          <input class="review__checkbox" id="bell-mountain" type="checkbox" name="bell-mountain" checked>
-          <label class="review__label-choice" for="bell-mountain">Гора-Колокол</label>
-          <input class="review__checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
-          <label class="review__label-choice" for="slide-park">Слайд-парк</label>
-          <input class="review__checkbox" id="red-mountains" type="checkbox" name="red-mountains">
-          <label class="review__label-choice" for="red-mountains">Красные скалы</label>
-        </fieldset>
-        <fieldset class="review__fieldset">
-          <legend class="review__legend">Опишите свои эмоции:</legend>
-          <textarea class="review__details" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
+        <div class="review__fieldset-wrapper">
+          <fieldset class="review__fieldset">
+            <legend class="review__legend">Представьтесь:</legend>
+            <div class="review__input-wrapper">
+              <label class="review__label" for="first-name">Имя*:</label>
+              <input class="review__input" id="first-name" type="text" name="user-first-name" placeholder="Петр"
+                required>
+            </div>
+            <div class="review__input-wrapper">
+              <label class="review__label" for="last-name">Фамилия*:</label>
+              <input class="review__input" id="last-name" type="text" name="user-last-name" placeholder="Иванов"
+                required>
+            </div>
+            <div class="review__input-wrapper">
+              <label class="review__label" for="paternal-name">Отчество:</label>
+              <input class="review__input" id="paternal-name" type="text" name="user-paternal-name"
+                placeholder="Александрович">
+            </div>
+          </fieldset>
+          <fieldset class="review__fieldset">
+            <legend class="review__legend">Контактная информация:</legend>
+            <label class="review__label review__label--info" for="phone-number">Контактный телефон*:</label>
+            <input class="review__input review__input--info" id="phone-number" type="tel" name="user-phone-number"
+              placeholder="Введите телефон" required>
+            <label class="review__label review__label--info" for="email-address">Электронная почта*:</label>
+            <input class="review__input review__input--info" id="email-address" type="email" name="user-email"
+              placeholder="Введите e-mail" required>
+          </fieldset>
+          <fieldset class="review__fieldset review__fieldset--impression">
+            <legend class="review__legend">Ваше общее впечатление:</legend>
+            <div class="review__wrapper">
+              <input class="review__radio visually-hidden" id="good-impression" type="radio" name="impression" checked>
+              <label class="review__label-choice" for="good-impression">Скорее положительное</label>
+              <input class="review__radio visually-hidden" id="bad-impression" type="radio" name="impression">
+              <label class="review__label-choice" for="bad-impression">Скорее отрицательное</label>
+              <input class="review__radio visually-hidden" id="unclear-impression" type="radio" name="impression">
+              <label class="review__label-choice" for="unclear-impression">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+          <fieldset class="review__fieldset">
+            <legend class="review__legend">Посещенные достопримечательности:</legend>
+            <div class="review__wrapper review__wrapper--checkbox">
+              <input class="review__checkbox visually-hidden" id="devils-bridge" type="checkbox" name="devils-bridge"
+                checked>
+              <label class="review__label-choice review__label-choice--checkbox" for="devils-bridge">Мост Дьявола</label>
+              <input class="review__checkbox visually-hidden" id="bell-mountain" type="checkbox" name="bell-mountain"
+                checked>
+              <label class="review__label-choice review__label-choice--checkbox" for="bell-mountain">Гора-Колокол</label>
+              <input class="review__checkbox visually-hidden" id="slide-park" type="checkbox" name="slide-park" checked>
+              <label class="review__label-choice review__label-choice--checkbox" for="slide-park">Слайд-парк</label>
+              <input class="review__checkbox visually-hidden" id="red-mountains" type="checkbox" name="red-mountains">
+              <label class="review__label-choice review__label-choice--checkbox" for="red-mountains">Красные скалы</label>
+            </div>
+          </fieldset>
+          <fieldset class="review__fieldset">
+            <legend class="review__legend">Опишите свои эмоции:</legend>
+            <textarea class="review__details" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+        </div>
         <button class="review__send button">Отправить отзыв</button>
       </form>
     </section>
