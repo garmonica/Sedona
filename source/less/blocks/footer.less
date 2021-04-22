@@ -1,24 +1,29 @@
 .footer {
-  padding: 37px 20px 23px;
+  padding: 37px 20px 13px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 37px 60px 23px;
+    padding: 32px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 120px;
   }
 }
 
 .footer__tag {
+  display: block;
+  margin-bottom: 35px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
   color: inherit;
-}
 
-.footer__copyright {
-  font-size: 14px;
-  line-height: 26px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }

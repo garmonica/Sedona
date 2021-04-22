@@ -119,8 +119,12 @@
 .advantages__item--detailed {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  flex-direction: column;
   background-color: @blue;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
 
   .advantages__title,
   .advantages__number,
