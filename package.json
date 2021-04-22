@@ -34,10 +34,13 @@
     "*.js",
     "source/*.html",
     "source/js/**/*.js",
-    "source/img/**/*.svg",
+    "source/img/vector/*.svg",
     "source/less/**/*.less"
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "normalize.less": "^1.0.0"
   }
 }
