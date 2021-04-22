@@ -104,6 +104,10 @@
     transform: rotate(-45deg);
     box-shadow: none;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed {
@@ -131,10 +135,6 @@
       background-color: @blue;
       box-shadow: 0 9px 0 @blue;
       transform: none;
-    }
-
-    @media (min-width: @tablet-width) {
-      display: none;
     }
   }
 }
