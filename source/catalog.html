@@ -11,9 +11,13 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <!-- logo -->
-      <img src="https://www.placecage.com/102/84">
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/vector/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/vector/logo-mobile.svg" width="102" height="84"
+          alt="Логотип города Седоны">
+      </picture>
     </a>
     <nav class="page-header__main-nav main-nav main-nav--nojs">
       <ul class="main-nav__list">
@@ -35,7 +39,8 @@
       </button>
     </nav>
     <div class="page-header__intro intro intro--short">
-      <img class="intro__slogan intro__slogan--short" src="https://www.placecage.com/229/39">
+      <img class="intro__slogan intro__slogan--short" src="img/vector/intro-text-inner.svg"
+        alt="Приветствие города Седоны">
     </div>
   </header>
 
@@ -49,7 +54,12 @@
       <ul class="photos__list">
         <li class="photos__item photos__item--top">
           <div class="photos__image-wrapper">
-            <img class="photos__image" src="https://www.placecage.com/280/280">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/photos/photo-1-desktop.jpg 1x, img/photos/photo-1-desktop@2x.jpg 2x">
+              <img class="photos__image" src="img/photos/photo-1-mobile.jpg"
+                srcset="img/photos/photo-1-mobile@2x.jpg 2x" alt="Пейзаж окрестностей Седоны в закат">
+            </picture>
           </div>
           <div class="photos__wrapper">
             <div class="photos__text-wrapper">
@@ -63,7 +73,12 @@
         </li>
         <li class="photos__item">
           <div class="photos__image-wrapper">
-            <img class="photos__image" src="https://www.placecage.com/280/280">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/photos/photo-2-desktop.jpg 1x, img/photos/photo-2-desktop@2x.jpg 2x">
+              <img class="photos__image" src="img/photos/photo-2-mobile.jpg"
+                srcset="img/photos/photo-2-mobile@2x.jpg 2x" alt="Флора Седоны">
+            </picture>
           </div>
           <div class="photos__wrapper">
             <div class="photos__text-wrapper">
@@ -77,7 +92,12 @@
         </li>
         <li class="photos__item">
           <div class="photos__image-wrapper">
-            <img class="photos__image" src="https://www.placecage.com/280/280">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/photos/photo-3-desktop.jpg 1x, img/photos/photo-3-desktop@2x.jpg 2x">
+              <img class="photos__image" src="img/photos/photo-3-mobile.jpg"
+                srcset="img/photos/photo-3-mobile@2x.jpg 2x" alt="Дорога за пределами Седоны">
+            </picture>
           </div>
           <div class="photos__wrapper">
             <div class="photos__text-wrapper">
@@ -91,7 +111,12 @@
         </li>
         <li class="photos__item">
           <div class="photos__image-wrapper">
-            <img class="photos__image" src="https://www.placecage.com/280/280">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="img/photos/photo-4-desktop.jpg 1x, img/photos/photo-4-desktop@2x.jpg 2x">
+              <img class="photos__image" src="img/photos/photo-4-mobile.jpg"
+                srcset="img/photos/photo-4-mobile@2x.jpg 2x" alt="Вид на мост Дьявола">
+            </picture>
           </div>
           <div class="photos__wrapper">
             <div class="photos__text-wrapper">
@@ -110,7 +135,18 @@
       <p class="video-presentation__doubts">Все еще сомневаетесь?</p>
       <p class="video-presentation__watch">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <video>
+
+      <picture>
+        <source media="(min-width: 1200px)"
+          srcset="img/photos/video-desktop.jpg 1x, img/photos/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/photos/video-tablet.jpg 1x, img/photos/video-tablet@2x.jpg 2x">
+        <img class="video-presentation__preview" src="img/photos/video-mobile.jpg"
+          srcset="img/photos/video-mobile@2x.jpg 2x" alt="Обложка видеопрезентации">
+      </picture>
+
+      <video class="video-presentation__clip">
+
+
         <!-- Тут надо стилизовать видео -->
       </video>
 

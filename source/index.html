@@ -12,8 +12,12 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <!-- logo -->
-      <img src="https://www.placecage.com/102/84">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/vector/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/vector/logo-mobile.svg" width="102" height="84"
+          alt="Логотип города Седоны">
+      </picture>
     </a>
     <nav class="page-header__main-nav main-nav main-nav--nojs">
       <ul class="main-nav__list">
@@ -35,7 +39,7 @@
       </button>
     </nav>
     <div class="page-header__intro intro">
-      <img class="intro__slogan" src="https://www.placecage.com/282/214">
+      <img class="intro__slogan" src="img/vector/intro-text-index.svg" alt="Приветствие города Седоны">
     </div>
   </header>
 
@@ -53,8 +57,15 @@
               <p class="advantages__number">№1</p>
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="advantages__image-wrapper">
-              <img class="advantages__photo" src="https://www.placecage.com/320/260"> <!-- Вставить фотку -->
+            <div class="advantages__photo-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photos/city-desktop.jpg 1x, img/photos/city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photos/city-tablet.jpg 1x, img/photos/city-tablet@2x.jpg 2x">
+                <img class="advantages__photo" src="img/photos/city-mobile.jpg"
+                  srcset="img/photos/city-mobile@2x.jpg 2x" alt="На улицах города Седона">
+              </picture>
             </div>
           </div>
           <ul class="advantages__services services">
@@ -79,8 +90,15 @@
               <p class="advantages__number">№2</p>
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantages__image-wrapper">
-              <img class="advantages__photo" src="https://www.placecage.com/320/260"> <!-- Вставить фотку -->
+            <div class="advantages__photo-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photos/bridge-desktop.jpg 1x, img/photos/bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photos/bridge-tablet.jpg 1x, img/photos/bridge-tablet@2x.jpg 2x">
+                <img class="advantages__photo" src="img/photos/bridge-mobile.jpg"
+                  srcset="img/photos/bridge-mobile@2x.jpg 2x" alt="Вид на мост Дьявола">
+              </picture>
             </div>
           </div>
         </li>
@@ -109,7 +127,11 @@
       <a class="hotel-search__link button" href="#">Найти гостиницу</a>
     </section>
     <div class="page-main__map">
-      <!-- Карта, но возможно в другой секции -->
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <img class="page-main__map-image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="768"
+          height="350" alt="Седона, Аризона, Соединенные Штаты Америки">
+      </picture>
     </div>
   </main>
 

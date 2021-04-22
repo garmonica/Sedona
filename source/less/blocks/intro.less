@@ -1,13 +1,30 @@
 .intro {
-  padding: 90px 20px 80px;
+  padding: 88px 20px 79px;
   margin-top: -28px;
   text-align: center;
-  background: url("../../img/vector/intro-decoration.svg") lightpink bottom center no-repeat;
+  background: url("../img/vector/intro-decoration.svg") bottom center no-repeat,
+    @bg-intro url("../img/photos/bg-mobile.jpg") bottom center no-repeat;
+
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/vector/intro-decoration.svg") bottom center no-repeat,
+      @bg-intro url("../img/photos/bg-mobile@2x.jpg") bottom center no-repeat;
+    background-size: auto, 767px auto;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 77px 20px 85px;
+    padding: 75px 20px 85px;
     margin-top: 0;
     text-align: center;
+    background: url("../img/vector/intro-decoration.svg") bottom center no-repeat,
+      @bg-intro url("../img/photos/bg-desktop.jpg") bottom center no-repeat;
+    background-size: auto, 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/vector/intro-decoration.svg") bottom center no-repeat,
+        @bg-intro url("../img/photos/bg-desktop@2x.jpg") bottom center no-repeat;
+      background-size: auto, 1200px auto;
+    }
   }
 }
 

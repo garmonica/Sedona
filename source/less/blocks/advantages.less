@@ -1,7 +1,3 @@
-.advantages {
-  outline: 1px solid crimson;
-}
-
 .advantages__text {
   .offset();
   padding: 15px 20px 11px;
@@ -49,7 +45,6 @@
     flex-shrink: 0;
     width: 256px;
     min-height: 256px;
-    outline: 1px solid red;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,17 +52,21 @@
   }
 }
 
-.advantages__image-wrapper {
+.advantages__photo-wrapper {
+  height: 260px;
+
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     background-color: green;
-    outline: 1px solid orange;
     overflow: hidden;
   }
 }
 
 .advantages__photo {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -108,7 +107,7 @@
 .advantages__item--detailed:first-child {
   .advantages__title {
     padding-top: 70px;
-    background: url("../../img/vector/advantages-triangle.svg") top center no-repeat;
+    background: url("../img/vector/advantages-triangle.svg") top center no-repeat;
 
     @media (min-width: @tablet-width) {
       padding-top: 40px;

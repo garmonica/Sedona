@@ -1,5 +1,4 @@
 .page-header {
-  outline: 1px solid crimson;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -14,5 +13,12 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: auto;
   }
 }

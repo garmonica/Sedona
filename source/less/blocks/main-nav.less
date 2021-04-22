@@ -1,5 +1,4 @@
 .main-nav {
-  outline: 1px solid crimson;
   order: -1;
 }
 
@@ -21,7 +20,6 @@
 .main-nav__item {
   @media (min-width: @tablet-width) {
     width: 153px;
-    outline: 1px solid green;
 
     &:nth-child(2) {
       margin-right: 156px;
@@ -53,6 +51,10 @@
 
 .main-nav__item:first-child .main-nav__link {
   box-shadow: 0 1px 0 fade(@black, 20%);
+
+  @media (min-width: @tablet-width) {
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {
@@ -70,6 +72,7 @@
     font-size: 14px;
     line-height: 26px;
     color: @black;
+    box-shadow: none;
   }
 }
 
