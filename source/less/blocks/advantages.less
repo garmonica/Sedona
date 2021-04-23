@@ -33,6 +33,27 @@
   }
 }
 
+.advantages__item:nth-child(3),
+.advantages__item:nth-child(4) {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 280px;
+    height: 1px;
+    background-color: @decoration-grey;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .advantages__item-wrapper {
   @media (min-width: @tablet-width) {
     display: flex;
@@ -56,6 +77,7 @@
   height: 260px;
 
   @media (min-width: @tablet-width) {
+    height: 256px;
     flex-grow: 1;
     background-color: green;
     overflow: hidden;
@@ -83,7 +105,9 @@
   font-weight: 700;
 
   @media (min-width: @tablet-width) {
-    padding: 40px 20px 15px;
+    padding: 42px 53px 15px;
+    margin: 0 auto;
+    max-width: 150px;
     font-size: 21px;
   }
 }
@@ -100,7 +124,11 @@
   padding: 17px 35px 26px;
 
   @media (min-width: @tablet-width) {
-    padding: 23px 35px 65px;
+    padding: 23px 40px 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 40px 62px;
   }
 }
 
@@ -110,8 +138,12 @@
     background: url("../img/vector/advantages-triangle.svg") top center no-repeat;
 
     @media (min-width: @tablet-width) {
-      padding-top: 40px;
+      padding-top: 42px;
       background: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 47px;
     }
   }
 }
@@ -137,7 +169,11 @@
     padding-top: 38px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 40px;
+      padding-top: 42px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 51px;
     }
   }
 
@@ -145,7 +181,19 @@
     padding: 17px 10px 37px;
 
     @media (min-width: @tablet-width) {
-      padding: 26px 20px 37px;
+      padding: 24px 30px 37px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 24px 60px 37px;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: @desktop-width) {
+        display: block;
+      }
     }
   }
 }
