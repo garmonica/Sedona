@@ -56,7 +56,7 @@
           достопримечательностях</p>
         <form class="review__form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="review__fieldset-wrapper">
-            <fieldset class="review__fieldset">
+            <fieldset class="review__fieldset review__fieldset--introduce">
               <legend class="review__legend">Представьтесь:</legend>
               <div class="review__input-wrapper">
                 <label class="review__label" for="first-name">Имя*:</label>
@@ -74,14 +74,21 @@
                   placeholder="Александрович">
               </div>
             </fieldset>
-            <fieldset class="review__fieldset">
-              <legend class="review__legend">Контактная информация:</legend>
-              <label class="review__label review__label--info" for="phone-number">Контактный телефон*:</label>
-              <input class="review__input review__input--info" id="phone-number" type="tel" name="user-phone-number"
-                placeholder="Введите телефон" required>
-              <label class="review__label review__label--info" for="email-address">Электронная почта*:</label>
-              <input class="review__input review__input--info" id="email-address" type="email" name="user-email"
-                placeholder="Введите e-mail" required>
+            <fieldset class="review__fieldset review__fieldset--info">
+              <legend class="review__legend review__legend--info">Контактная информация:</legend>
+              <div class="review__info-wrapper">
+                <div class="review__phone-wrapper">
+                  <label class="review__label review__label--info" for="phone-number"><span>Контактный</span>
+                    телефон*:</label>
+                  <input class="review__input review__input--info" id="phone-number" type="tel" name="user-phone-number"
+                    placeholder="Введите телефон" required>
+                </div>
+                <div class="review__email-wrapper">
+                  <label class="review__label review__label--info" for="email-address">Электронная почта*:</label>
+                  <input class="review__input review__input--info" id="email-address" type="email" name="user-email"
+                    placeholder="Введите e-mail" required>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="review__fieldset review__fieldset--impression">
               <legend class="review__legend">Ваше общее впечатление:</legend>
@@ -119,7 +126,11 @@
               <textarea class="review__details" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
           </div>
-          <button class="review__send button">Отправить отзыв</button>
+          <div class="review__button-wrapper">
+            <button class="review__send button">Отправить отзыв</button>
+            <span>* &mdash; обязательные поля</span>
+          </div>
+
         </form>
       </section>
 
