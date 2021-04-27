@@ -4,7 +4,7 @@
 
 .page-main__heading {
   .offset();
-  padding: 31px 20px 19px;
+  padding: 32px 20px 19px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -13,6 +13,10 @@
   @media (min-width: @tablet-width) {
     padding: 63px 20px 24px;
     font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 99px;
   }
 }
 
@@ -39,10 +43,16 @@
 .page-main__description {
   .offset();
   padding: 10px 20px 10px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
   color: @dark-grey;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    max-width: 440px;
+    margin: 0 auto;
+  }
 }
 
 .page-main__map {

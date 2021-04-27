@@ -70,6 +70,9 @@
                 <p class="photos__author">Автор фото: Борис</p>
               </div>
               <button class="photos__likes-button">
+                <svg class="photos__likes-icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photos__likes-number">1350</span>
               </button>
             </div>
@@ -89,6 +92,9 @@
                 <p class="photos__author">Автор фото: Сергей</p>
               </div>
               <button class="photos__likes-button">
+                <svg class="photos__likes-icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photos__likes-number">143</span>
               </button>
             </div>
@@ -108,6 +114,9 @@
                 <p class="photos__author">Автор фото: Петр</p>
               </div>
               <button class="photos__likes-button">
+                <svg class="photos__likes-icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photos__likes-number">96</span>
               </button>
             </div>
@@ -127,6 +136,9 @@
                 <p class="photos__author">Автор фото: Антон</p>
               </div>
               <button class="photos__likes-button">
+                <svg class="photos__likes-icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
                 <span class="photos__likes-number">254</span>
               </button>
             </div>
@@ -139,19 +151,45 @@
         <p class="video-presentation__watch">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
 
-        <picture>
+        <!-- <picture>
           <source media="(min-width: 1200px)"
             srcset="img/photos/video-desktop.jpg 1x, img/photos/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photos/video-tablet.jpg 1x, img/photos/video-tablet@2x.jpg 2x">
           <img class="video-presentation__preview" src="img/photos/video-mobile.jpg"
             srcset="img/photos/video-mobile@2x.jpg 2x" alt="Обложка видеопрезентации">
-        </picture>
+        </picture> -->
 
-        <video class="video-presentation__clip">
+        <div class="video-presentation__wrapper">
+          <video class="video-presentation__clip video-presentation__clip--desktop"
+            poster="img/photos/video-desktop.jpg"></video>
+          <video class="video-presentation__clip video-presentation__clip--tablet"
+            poster="img/photos/video-tablet.jpg"></video>
+          <video class="video-presentation__clip video-presentation__clip--mobile"
+            poster="img/photos/video-mobile.jpg"></video>
 
-
-          <!-- Тут надо стилизовать видео -->
-        </video>
+          <div class="video-presentation__controls controls">
+            <button class="controls__button controls__button--replay" aria-label="Воспроизвести видео снова">
+              <svg class="controls__icon" width="16" height="20">
+                <use xlink:href="img/sprite.svg#video-replay"></use>
+              </svg>
+            </button>
+            <div class="controls__timeline-wrapper">
+              <div class="controls__timeline-bar">
+                <div class="controls__timeline-thumb"></div>
+              </div>
+            </div>
+            <button class="controls__button controls__button--subtitles" aria-label="Включить субтитры">
+              <svg class="controls__icon" width="32" height="20">
+                <use xlink:href="img/sprite.svg#video-subtitles"></use>
+              </svg>
+            </button>
+            <button class="controls__button controls__button--fullscreen" aria-label="Включить полноэкранный режим">
+              <svg class="controls__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#video-fullscreen"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
 
       </section>
 

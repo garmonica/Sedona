@@ -1,0 +1,13 @@
+WEBVTT
+
+00:00.000 --> 00:01.000
+Red sails in the sunset
+
+00:01.000 --> 00:02.000
+Way out on the sea
+
+00:02.000 --> 00:03.000
+Oh, carry my loved one
+
+00:03.000 --> 00:04.000
+Home safely to me
